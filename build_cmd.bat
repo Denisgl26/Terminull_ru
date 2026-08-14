@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole --name Terminull_v1.0.0 Terminull.py
