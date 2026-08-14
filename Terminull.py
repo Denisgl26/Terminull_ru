@@ -37,6 +37,8 @@ except ImportError:
     )
 
 
+VERSION = "1.0.0"
+
 BAUDRATES = [1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400]
 
 # Интервал обновления окна вывода (мс). Фиксированный, НЕ адаптивный -
@@ -65,7 +67,7 @@ class SerialApp(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.title("Terminull - загрузит все, но это не точно...")
+        self.title(f"Terminull - загрузит все, но это не точно... Версия {VERSION}")
         self.geometry("700x600")
         self.minsize(560, 400)
 
